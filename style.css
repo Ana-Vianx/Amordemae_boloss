@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 body {
     margin: 0;
@@ -6,50 +7,62 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* camada escura */
+        url("./images/login_img.png") center/cover no-repeat;
+    background-blend-mode: darken;
+    gap: 30px;
 }
 
 .login-box {
     background: #ea9790;
     padding: 30px;
-    width: 300px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    text-align:left;
-}
-
-.tela_login {
-    /*background-image: url("./images/login_img.png");*/
-    background-position: center;
-    margin: 0;
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* camada escura */
-        url("./images/login_img.png") center/cover no-repeat;
-    background-blend-mode: darken;
-
+    width: 350px;
+    height: 300px;
+    box-shadow: 0 10px 25px #00000033;
+    padding: 30px;
+    font-family: "Abril Fatface", serif;
+    color: #410101;
 }
 
 input {
     width: 90%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ea9790;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #410101;
+    text-align:left;
+    margin-bottom: 25px;
+    background-color: #ea9790;
+    
+}
+
+.titulo_input p {
+    margin: 0 0 4px 0;
 }
 
 button {
-    width: 30%;
-    padding: 10px;
+    width: 90%;
+    padding: 5px;
     background: #000000;
-    color: white;
-    border-radius: 5px;
+    color: #944040;
+    border-radius: 12px;
     cursor: pointer;
     font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
 }
 
 button:hover {
     background: #eb5e41;
 }
 
-form{
-    gap:1;
-    padding: 1;
-    
+
+.link_conta_nova{
+    color: rgb(65, 1, 1);
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
 }

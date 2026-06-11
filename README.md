@@ -1,7 +1,7 @@
 # 🍰 Amordemae_boloss
 
 ## 📌 Objective
-A system where administrators manage production, while other users can only view the menu.
+A system where manage orders , and other users can view the menu and make your order.
 
 ## 📄 Project Scope
 The project is developed using **HTML5** and **CSS3** for the front end, **Python** for the back end, and **PostgreSQL** for data management.

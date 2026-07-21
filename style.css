@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 
 /*ESTILIZAÇÃO GERAL PARA TODAS AS PÁGINAS*/
 *{
@@ -88,7 +92,7 @@ body{
 /*ESTILIZAÇÃO TELA LOGIN*/
 .tela_login {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Abril Fatface", serif;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -130,7 +134,7 @@ body{
 .botao_login {
     width: 90%;
     padding: 5px;
-    background: #000000;
+    background: #6d2d1e;
     color: #944040;
     border-radius: 12px;
     cursor: pointer;
@@ -140,9 +144,6 @@ body{
     margin-top: 5%;
 }
 
-button:hover {
-    background: #eb5e41;
-}
 
 .link_conta_nova{
     color: rgb(65, 1, 1);
@@ -152,9 +153,10 @@ button:hover {
     margin-top: 10px;
 }
 
+/*ESTILIZAÇÃO CARDÁPIO*/
+
 .cardapio{
     background-color: #f1c2be;
-    font-family:Arial, sans-serif;
 }
 
 .categorias{
@@ -162,15 +164,21 @@ button:hover {
     justify-content:center;
     gap:15px;
     margin-bottom:30px;
+    margin-top: 50px;
+    font-family: "Chau Philomene One", sans-serif;
+
 }
 
 .tab{
     padding:10px 25px;
     border-radius:30px;
-    border:2px solid #6d2d1e;
+    border:3px solid #6d2d1e;
     background:#fff;
+    color: #6d2d1e;
     cursor:pointer;
     font-weight:bold;
+    font-family: "Chau Philomene One", sans-serif;
+    font-size: 17px;
 }
 
 .tab.active{
@@ -192,9 +200,11 @@ button:hover {
 .card{
     width:180px;
     background:#fff;
+    color: #410101;
     border-radius:20px;
     padding:15px;
     text-align:center;
+    font-family: "Poppins", sans-serif;
 }
 
 .card img{
@@ -208,7 +218,42 @@ button:hover {
     width:100%;
     border:none;
     border-radius:20px;
-    background:#c5302b;
+    background: rgb(177, 0, 0);
     color:#fff;
     cursor:pointer;
+    font-family: "Chau Philomene One", sans-serif;
+}
+
+/*ESTILIZAÇÃO PÁGINA FEEDBACK*/
+
+.feedback{
+    background-color: #ea9790;
+}
+
+.comentario{
+    width:350px;
+    background:#fff;
+    color: #410101;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    font-family: "Poppins", sans-serif;
+    text-align:justify;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comentarios{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    padding:25px;
+}
+
+.nome{
+    font-weight: bold;
+    text-align:center;
 }
